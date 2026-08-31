@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SousCard Privacy Policy</title>
-<meta name="description" content="The privacy policy for SousCard, a digital recipe box for Android. SousCard collects no data and shares no data.">
+<meta name="description" content="The privacy policy for SousCard, a digital recipe box for Android and iOS. SousCard collects no data and shares no data.">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -12,14 +12,17 @@
 <p class="crumb"><a href="/">Crizzy Development</a> / <a href="/souscard/">SousCard</a> / Privacy policy</p>
 <header>
   <h1>SousCard Privacy Policy</h1>
-  <p class="lede">This policy applies to the SousCard app for Android, published by Crizzy Development.</p>
+  <p class="lede">This policy applies to the SousCard app for Android and iOS, published by
+  Richard Brunet, an independent developer. Crizzy Development is the name the apps on this site
+  are published under; it is not a separate legal entity.</p>
   <p class="meta">Effective 31 August 2026. Last updated 31 August 2026.</p>
 </header>
 
 <div class="key">
   <p><strong>The short version.</strong> SousCard does not collect your information, does not
   share it, and has no server to send it to. Your recipes, photos and notes are stored on your
-  device. There is no account, no advertising and no analytics.</p>
+  device. There is no account, no advertising and no analytics. The one exception is a Support
+  Export, which only exists if you deliberately create one and send it — described below.</p>
 </div>
 
 <h2>Information we collect</h2>
@@ -37,12 +40,21 @@ storage on your device. It is not transmitted to us and it is not accessible to 
 section below.</p>
 
 <h2>Camera, photos and documents</h2>
-<p>When you scan a recipe card or a cookbook page, capture is handled by the document scanner
-that is part of Google Play services on your device. When you attach a photo, it is selected
-through the Android system photo picker, which gives the app access to the single image you
-choose and nothing else. SousCard does not request permission to read your photo library.</p>
 <p>Reading text from an image, recognising the layout of a page, and reading a PDF all happen on
-your device. No image, page or document is uploaded anywhere.</p>
+your device, on both platforms. No image, page or document is uploaded anywhere. Text recognition
+uses Google's ML Kit on Android and Apple's Vision framework on iOS; both run offline, on the
+device, as part of the app.</p>
+<p>How the app reaches your camera and photos differs between the two platforms, because the
+platforms differ:</p>
+<ul>
+  <li><strong>On Android</strong>, SousCard requests no camera or photo permissions at all.
+  Scanning is handled by the document scanner built into Google Play services, which runs outside
+  the app under its own permissions, and attaching a photo goes through the Android system photo
+  picker, which hands the app the single image you chose and nothing else.</li>
+  <li><strong>On iOS</strong>, the app asks for camera access when you scan a page and for photo
+  library access when you attach a picture. iOS will prompt you, and you can decline or change
+  your mind later in Settings. The access is used only for the action you asked for.</li>
+</ul>
 
 <h2>When SousCard uses the network</h2>
 <p>SousCard uses the internet in one situation: when you paste a recipe link into the app or share
@@ -52,31 +64,74 @@ same way it would if you had opened the page in a browser. It does not pass thro
 ours, and we receive nothing from it.</p>
 <p>Every other part of SousCard works with the network switched off.</p>
 
-<h2>Backup to your Google account</h2>
-<p>Android's built-in Auto Backup may copy the app's data to your own Google account, so that your
-recipe box returns when you set up a new device. This is a feature of the Android operating
-system, not of SousCard. The data goes to your Google account, not to us, and Google's terms and
-privacy policy govern it. You can turn it off in your device's Android settings, under backup.</p>
+<h2>Backup to your own cloud account</h2>
+<p>Your device's own backup may copy the app's data to your personal cloud account, so that your
+recipe box returns when you set up a new device. This is a feature of the operating system, not of
+SousCard. The data goes to your account, not to us, and your platform's terms and privacy policy
+govern it.</p>
+<ul>
+  <li><strong>On Android</strong>, this is Auto Backup to your Google account. Android caps how
+  much data an app may back up, so on a large library some photos may deliberately stay on the
+  device only rather than push the whole backup over that cap. The app tells you when that
+  happens.</li>
+  <li><strong>On iOS</strong>, this is iCloud Backup, which has no comparable per-app cap, so the
+  recipe box and its photos are included when iCloud Backup is switched on.</li>
+</ul>
+<p>Either can be turned off in your device settings.</p>
+
+<h2>Files you export and share</h2>
+<p>SousCard can write your recipe box out as a file that you keep or hand to someone else. That
+file is created by you, goes wherever you send it, and never comes to us. It deliberately contains
+nothing about your device — no model, no operating system version, no identifiers — because a file
+you might share with a friend should not carry those things.</p>
+
+<h2>Support Exports</h2>
+<p>This is the one path by which anything reaches us, and it happens only if you choose it.</p>
+<p>A Support Export is a separate, clearly labelled action. It produces the same kind of file as an
+ordinary export, plus a description of your situation that makes a support conversation possible
+without several rounds of questions. <strong>The app shows you what the file contains before it
+creates it.</strong></p>
+<p>The added description contains facts about the software and the device model, and nothing that
+identifies you:</p>
+<ul>
+  <li>Device model and manufacturer, operating system version and build, screen size, text size
+  setting, language and time zone.</li>
+  <li>App version and build, database and file-format versions, and the store region.</li>
+  <li>How many recipes and photos your library holds, and how many photos are outside your
+  platform's backup.</li>
+  <li>Your recipes, because a Support Export is built on an ordinary export and that is what a
+  backup is.</li>
+  <li><strong>Your photos only if you switch them on.</strong> They are excluded by default, and
+  are only worth including when the problem is with photos themselves.</li>
+</ul>
+<p>It contains no advertising identifier, no vendor or device identifier, no account and no serial
+number. Nothing in it distinguishes two people using the same model of phone.</p>
+<p>Nothing is sent automatically. You create the file, you look at it if you wish, and you send it
+to us yourself. When you do, we use it only to answer your support request, and we delete it once
+that conversation is finished.</p>
 
 <h2>Crash reports</h2>
-<p>SousCard contains no crash-reporting software. If you have enabled Android's own usage and
-diagnostics reporting, Google may make anonymous, aggregated crash and performance information
-available to us through Google Play. That reporting is a function of Android and Google Play,
-is controlled by your device settings, and does not identify you to us.</p>
+<p>SousCard contains no crash-reporting software. If you have enabled your platform's own
+diagnostics sharing — "usage and diagnostics" on Android, "share with app developers" on iOS —
+your platform may make anonymous, aggregated crash and performance information available to us
+through Google Play or App Store Connect. That reporting is a function of the operating system and
+the store, is controlled by your device settings, and does not identify you to us.</p>
 
 <h2>Children</h2>
 <p>SousCard is not directed to children under 13, and we do not knowingly collect information from
 anyone, children included.</p>
 
 <h2>Your choices</h2>
-<p>Because we hold no information about you, there is nothing for us to disclose, correct or
-delete on request. Everything the app holds is on your device and under your control: delete
+<p>Because we hold no information about you, there is normally nothing for us to disclose, correct
+or delete on request. Everything the app holds is on your device and under your control: delete
 individual recipes in the app, or uninstall the app to remove all of it. To remove a copy held by
-Android's backup, use your Google account's backup settings.</p>
+your platform's backup, use your Google or iCloud account's backup settings.</p>
+<p>If you have sent us a Support Export and would like it deleted before the support conversation
+ends, ask and we will delete it.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted at this address with a new effective
-date. Material changes will also be noted in the app's release notes on Google Play.</p>
+date. Material changes will also be noted in the app's release notes.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:crizzydevelopment@gmail.com">crizzydevelopment@gmail.com</a>.</p>
