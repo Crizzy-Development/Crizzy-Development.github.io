@@ -1,0 +1,7 @@
+# This repository is public and permanent: anything that wanders in is visible
+# to everyone and stays in the history. Nothing here is generated, so this list
+# is only OS clutter.
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
