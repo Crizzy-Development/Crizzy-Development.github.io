@@ -37,6 +37,13 @@ ul { padding-left:1.25rem; }
   padding:16px 20px; margin:0 0 22px; }
 .key ul { margin:0; }
 .key li:last-child { margin-bottom:0; }
+.faq { background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:0 20px; margin:0 0 12px; }
+.faq summary { padding:14px 0; cursor:pointer; }
+.faq summary h4 { display:inline; font-size:1rem; margin:0; }
+.faq[open] summary { border-bottom:1px solid var(--rule); }
+.faq-a { padding:14px 0; }
+.faq-a p:last-child { margin-bottom:0; }
 footer { margin-top:56px; padding-top:18px; border-top:1px solid var(--rule);
   color:var(--ink-soft); font-size:.85rem; }
 code { background:var(--code-bg); padding:1px 5px; border-radius:4px; font-size:.88em;
