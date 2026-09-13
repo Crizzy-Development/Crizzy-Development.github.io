@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SousCard Privacy Policy</title>
-<meta name="description" content="The privacy policy for SousCard, a digital recipe box for Android and iOS. SousCard collects no data and shares no data.">
+<meta name="description" content="The privacy policy for SousCard, a digital recipe box for Android and iOS. Your recipes stay on your device. SousCard sends only anonymous usage analytics, and you can turn them off.">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -15,24 +15,65 @@
   <p class="lede">This policy applies to the SousCard app for Android and iOS, published by
   Richard Brunet, an independent developer. Crizzy Development is the name the apps on this site
   are published under; it is not a separate legal entity.</p>
-  <p class="meta">Effective 31 August 2026. Last updated 31 August 2026.</p>
+  <p class="meta">Effective [RELEASE DATE]. Last updated [RELEASE DATE].</p>
 </header>
 
 <div class="key">
-  <p><strong>The short version.</strong> SousCard does not collect your information, does not
-  share it, and has no server to send it to. Your recipes, photos and notes are stored on your
-  device — they are yours. There is no account, no advertising and no analytics, and that is
-  intentional, by design.</p>
-  <p>The one exception is a Support Export: it exists only if you deliberately create one and
-  send it to us, and it is described in full below.</p>
+  <p><strong>The short version.</strong> Your recipes, photos and notes are stored on your device.
+  They are yours, and they never leave it unless you send them somewhere yourself. There is no
+  account and no advertising, and nothing about you is sold or shared.</p>
+  <p>SousCard sends anonymous usage analytics. These record which features are used and whether they
+  worked, never what you put into them. Analytics are on by default, and you can turn them off at any
+  time in the app's Settings.</p>
+  <p>The only other thing that can reach us is a Support Export. It exists only if you deliberately
+  create one and send it to us. Both are described in full below.</p>
 </div>
 
 <h2>Information we collect</h2>
-<p>None. SousCard has no user accounts, no sign-in, no registration and no server operated by us.
-We do not collect, receive, store, sell or share personal information, and we have no ability to
-identify you or your device.</p>
-<p>SousCard contains no advertising software, no analytics software and no third-party tracking
-software of any kind.</p>
+<p>We collect anonymous usage analytics, described in the next section, and nothing else. SousCard
+has no user accounts, no sign-in and no registration. We do not collect, store, sell or share
+personal information, and we have no ability to identify you.</p>
+<p>SousCard contains no advertising software and no third-party tracking software.</p>
+
+<h2>Usage analytics</h2>
+<p>To learn which parts of SousCard are used and where they fall short, the app sends short,
+anonymous messages about how it is used. They go to TelemetryDeck, an analytics service that
+processes them on our behalf and stores them in the European Union. No one else receives them, for
+any purpose, advertising included.</p>
+<p><strong>What is sent:</strong></p>
+<ul>
+  <li>Which features are used and how they turn out. For example: that a recipe was clipped from a
+  photo and saved, that a clip did not succeed and at which stage, or that Cook Mode was opened.</li>
+  <!-- DRAFT: before release, confirm the released build sends exactly these details (#139), and no more. -->
+  <li>Technical details of your device and the app:
+    <ul>
+      <li>operating system and version, and app version</li>
+      <li>language and region</li>
+      <li>screen size</li>
+      <li>text size</li>
+      <li>how often, and for how long, the app is used</li>
+    </ul>
+  </li>
+  <li>A random identifier for this installation of the app, so that usage can be counted without
+  knowing who you are. It is created for SousCard alone, so no other app, including any other app of
+  ours, can match it. It is scrambled on your device before it is sent, and scrambled again by
+  TelemetryDeck.</li>
+</ul>
+<p><strong>What is never sent:</strong></p>
+<ul>
+  <li>Anything you write, clip or photograph: recipe titles, ingredients, method steps, notes, tags
+  and photos.</li>
+  <li>Anything you type or search for.</li>
+  <li>Any part of a web address, including the name of a website you clip from.</li>
+  <li>File names, and the text of any error message.</li>
+  <li>Your device model, your time zone, and any display or accessibility setting other than text
+  size.</li>
+  <li>Your name, email address, contacts or location, and any advertising identifier.</li>
+</ul>
+<p><strong>Turning it off.</strong> Usage analytics are on by default. To turn them off, open
+Settings in SousCard and switch off <em>Share Anonymous Usage Analytics</em>. This takes effect
+straight away: nothing more is sent, and analytics not yet sent are discarded. The rest of the app
+works exactly the same either way.</p>
 
 <h2>Information stored on your device</h2>
 <p>The app stores the things you put into it: recipe titles, descriptions, ingredients, method
@@ -60,12 +101,19 @@ platforms differ:</p>
 </ul>
 
 <h2>When SousCard uses the network</h2>
-<p>SousCard uses the internet in one situation: when you paste a recipe link into the app or share
-a web page to it. The app then fetches that page directly from the website you named, in order to
-read the recipe from it. That request goes to that website, which will see your IP address in the
-same way it would if you had opened the page in a browser. It does not pass through any system of
-ours, and we receive nothing from it.</p>
-<p>Every other part of SousCard works with the network switched off.</p>
+<p>SousCard uses the internet in two situations.</p>
+<ul>
+  <li><strong>When you clip a web page.</strong> If you paste a recipe link into the app or share a
+  web page to it, the app fetches that page directly from the website you named, in order to read
+  the recipe from it. That request goes to that website, which will see your IP address in the same
+  way it would if you had opened the page in a browser. The request does not pass through any
+  system of ours, and we receive nothing from it.</li>
+  <li><strong>When it sends usage analytics</strong>, while that setting is on. Like any internet
+  request, this reveals your network's IP address to the server that receives it. SousCard does not
+  include your IP address in what it sends.</li>
+</ul>
+<p>Every other part of SousCard works with the network switched off. Nothing in the app waits for
+analytics to be sent: without a connection, they are held on your device and sent later.</p>
 
 <h2>Backup to your own cloud account</h2>
 <p>Your device's own backup may copy the app's data to your personal cloud account, so that your
@@ -89,7 +137,8 @@ nothing about your device — no model, no operating system version, no identifi
 you might share with a friend should not carry those things.</p>
 
 <h2>Support Exports</h2>
-<p>This is the one path by which anything reaches us, and it happens only if you choose it.</p>
+<p>Apart from the anonymous usage analytics described above, this is the one way anything reaches
+us, and it happens only if you choose it.</p>
 <p>A Support Export is a separate, clearly labelled action. It produces the same kind of file as an
 ordinary export, plus a description of your situation that makes a support conversation possible
 without several rounds of questions. <strong>The app shows you what the file contains before it
@@ -109,26 +158,32 @@ identifies you:</p>
 </ul>
 <p>It contains no advertising identifier, no vendor or device identifier, no account and no serial
 number. Nothing in it distinguishes two people using the same model of phone.</p>
-<p>Nothing is sent automatically. You create the file, you look at it if you wish, and you send it
-to us yourself. When you do, we use it only to answer your support request, and we delete it once
-that conversation is finished.</p>
+<p>A Support Export is never sent automatically. You create the file, you look at it if you wish,
+and you send it to us yourself. When you do, we use it only to answer your support request, and we
+delete it once that conversation is finished.</p>
 
 <h2>Crash reports</h2>
-<p>SousCard contains no crash-reporting software. If you have enabled your platform's own
-diagnostics sharing — "usage and diagnostics" on Android, "share with app developers" on iOS —
-your platform may make anonymous, aggregated crash and performance information available to us
-through Google Play or App Store Connect. That reporting is a function of the operating system and
-the store, is controlled by your device settings, and does not identify you to us.</p>
+<p>SousCard contains no crash-reporting software. Usage analytics may record that something did not
+succeed, and at which stage, but never an error message or a crash log.</p>
+<p>If you have turned on your platform's own diagnostics sharing ("usage and diagnostics" on
+Android, "share with app developers" on iOS), your platform may make anonymous, aggregated crash and
+performance information available to us through Google Play or App Store Connect. That reporting is
+a function of the operating system and the store, is controlled by your device settings, and does
+not identify you to us.</p>
 
 <h2>Children</h2>
-<p>SousCard is not directed to children under 13, and we do not knowingly collect information from
-anyone, children included.</p>
+<p>SousCard is not directed to children under 13, and we do not knowingly collect personal
+information from anyone, children included.</p>
 
 <h2>Your choices</h2>
-<p>Because we hold no information about you, there is normally nothing for us to disclose, correct
-or delete on request. Everything the app holds is on your device and under your control: delete
-individual recipes in the app, or uninstall the app to remove all of it. To remove a copy held by
-your platform's backup, use your Google or iCloud account's backup settings.</p>
+<p><strong>Usage analytics</strong> can be turned off at any time in SousCard's Settings, as
+described above. The analytics identifier is scrambled on your device before it is sent, so neither
+we nor TelemetryDeck can tell which analytics came from you, and there is nothing we could find to
+disclose or delete on request.</p>
+<p>Otherwise, we hold no information about you. Everything the app holds is on your device and under
+your control: delete individual recipes in the app, or uninstall the app to remove all of it. To
+remove a copy held by your platform's backup, use your Google or iCloud account's backup
+settings.</p>
 <p>If you have sent us a Support Export and would like it deleted before the support conversation
 ends, ask and we will delete it.</p>
 
