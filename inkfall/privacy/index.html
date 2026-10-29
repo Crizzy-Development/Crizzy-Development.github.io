@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inkfall Privacy Policy</title>
-<meta name="description" content="The privacy policy for Inkfall, a narrative role-playing game for Android and iOS. Your stories stay on your device; each turn is sent to Google's Gemini API to write the next passage, and nothing else leaves.">
+<meta name="description" content="The privacy policy for Inkfall, a narrative role-playing game for Android and iOS. Your stories stay on your device; each turn is sent to Google's Gemini API to write the next passage, and a report of a passage reaches us only if you send it.">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
   <p class="lede">This policy applies to the Inkfall app for Android and iOS, published by an
   independent developer. Crizzy Development is the name the apps on this site are published under;
   it is not a separate legal entity.</p>
-  <p class="meta">Effective October 28, 2026.</p>
+  <p class="meta">Effective October 29, 2026.</p>
 </header>
 
 <div class="key">
@@ -23,18 +23,24 @@
   and everything the app records while you play, are stored on your device. There is no account, no
   advertising, no analytics and no tracking. We collect no personal information, and nothing about
   you is sold or shared.</p>
-  <p>One thing leaves your device: to write each passage, Inkfall sends what you wrote, together
-  with the story so far and the state the app keeps for it, to Google's Gemini API, an AI service
-  that returns the next passage. It goes from your device to Google directly, as our service
+  <p>One thing leaves your device as you play: to write each passage, Inkfall sends what you wrote,
+  together with the story so far and the state the app keeps for it, to Google's Gemini API, an AI
+  service that returns the next passage. It goes from your device to Google directly, as our service
   provider. It does not pass through any system of ours, and we never see it. The section on the
   narrator below says exactly what is sent and what Google does with it.</p>
+  <p>One more thing can leave, and only if you send it: a report of a passage the narrator should not
+  have written. Inkfall writes the report as an email in your own mail app, and nothing reaches us
+  until you send that email. The section on reporting a passage says what a report contains.</p>
 </div>
 
 <h2>Information we collect</h2>
-<p>None. Inkfall has no user accounts, no sign-in and no registration. We do not collect, store, sell
-or share any personal information, and we have no ability to identify you. The narrator's requests
-go from your device to Google and back without touching anything of ours, so we hold no copy of your
-stories and could not read one.</p>
+<p>None, unless you write to us. Inkfall has no user accounts, no sign-in and no registration. We do
+not collect, store, sell or share any personal information, and the app gives us no way to identify
+you. The narrator's requests go from your device to Google and back without touching anything of
+ours, so we hold no copy of your stories and could not read one.</p>
+<p>If you send us a report of a passage, or any other email, we receive what you sent, including the
+email address it was sent from. The section on reporting a passage says exactly what a report
+contains and what we do with it.</p>
 <p>Inkfall contains no advertising software, no analytics and no third-party tracking software. In
 fact, significant efforts have been made to explicitly avoid such capabilities.</p>
 
@@ -47,13 +53,15 @@ fact, significant efforts have been made to explicitly avoid such capabilities.<
   you are under, and what has come to light.</li>
   <li>Which Codex entries you have seen, whether you asked not to see the intro again, and your
   settings.</li>
+  <li>The passages you have reported: which passage, the reasons you chose, your note, and when you
+  handed the report to your mail app, so the passage stays marked and you can send it again.</li>
   <li>A ledger of the narrator's calls: which turn, which provider and model, how much text went
   back and forth, and whether the result was used. Identifiers and numbers only, never story
   text.</li>
 </ul>
 <p>All of it is held in the app's private storage on your device. It is not transmitted to us and it
 is not accessible to us.</p>
-<p>Deleting a story removes its text and its state. The call ledger keeps its rows, because they
+<p>Deleting a story removes its text, its state and the record of its reports. The call ledger keeps its rows, because they
 describe what this installation of the app has spent rather than any one story, and they contain no
 story text. Uninstalling Inkfall removes all of it, subject to the backup section below.</p>
 <p>The app can copy that ledger to your clipboard as a table, from the Game State Inspector, when you
@@ -80,11 +88,42 @@ everything else, and no copy of the exchange is kept by us.</p>
 <p>The iOS test build does not yet have this narrator: its passages come from text built into the
 app, and it sends nothing. It gains the live narrator in a later version.</p>
 
+<h2>Reporting a passage</h2>
+<p>Any passage the narrator writes can be reported: tap the flag beneath it, or press and hold the
+passage. You choose what is wrong with it, from offensive or hateful content to content beyond the
+bounds of the story or harmful advice, and you can add a note.</p>
+<p>Inkfall has no server for reports. <strong>Send by email</strong> opens a new email in your mail
+app, addressed to <a href="mailto:crizzydevelopment@gmail.com">crizzydevelopment@gmail.com</a>, with
+the report already written. Nothing is sent until you send that email from your own account, and you
+can read every word of it first: in the app, under "What this report carries", and in the email
+itself.</p>
+<p>A report contains:</p>
+<ul>
+  <li>the passage you reported, and the three turns before it: what you wrote and what the narrator
+  returned;</li>
+  <li>the reasons you chose and your note;</li>
+  <li>details of the story: the world it is set in, the story's identifier in the app, the turn,
+  when the passage was written, which AI provider and model wrote it, and the app's version with
+  your device's operating system and its version;</li>
+  <li>the parts of the story's state the narrator was given when it wrote the passage, named by the
+  codes the app's own content uses rather than in words;</li>
+  <li>a check value at the end, which lets us tell whether the report below the "Do Not Edit" line
+  was changed.</li>
+</ul>
+<p>Nothing else from your device is included. Because it is an email, it also carries what any email
+carries: the address you send it from, and the name your mail account shows.</p>
+<p>We use a report to understand what the narrator wrote and why, to tighten the bounds it writes
+within, and to reply to you. We do not sell or share them, and we keep each one only as long as we need it for those purposes. To have a report
+you sent deleted, write to the same address.</p>
+<p>If your device has no mail app set up, Inkfall offers to copy the report instead, so you can paste
+it into an email from anywhere. Copying sends nothing.</p>
+
 <h2>When Inkfall uses the network</h2>
 <p>When the narrator writes, and at no other time. Each turn is one request from your device to
 Google's servers. Nothing else in the app uses the network: no analytics, no crash reports, no
-checks for updates. Without a connection a new passage cannot be written, and everything already in
-your story can still be read.</p>
+checks for updates. A report does not use Inkfall's connection: the app hands the email to your mail
+app, which sends it if you do. Without a connection a new passage cannot be written, and everything
+already in your story can still be read.</p>
 
 <h2>Backup to your own cloud account</h2>
 <p>Your device's own backup may copy the app's data to your personal cloud account, so that your
@@ -111,8 +150,9 @@ children under 13, and we do not knowingly collect personal information from any
 included.</p>
 
 <h2>Your choices</h2>
-<p>We hold no information about you. Everything the app holds is on your device and under your
-control: delete a story from the Home screen (hold to delete, and it is not reversible), or
+<p>We hold no information about you unless you have written to us, and then only what you sent.
+Sending a report is always your choice, and a report you sent can be deleted on request. Everything
+the app holds is on your device and under your control: delete a story from the Home screen (hold to delete, and it is not reversible), or
 uninstall the app to remove all of it. To remove a copy held by your platform's backup, use your
 Google or iCloud account's backup settings.</p>
 <p>What has been sent to the narrator cannot be recalled from Google by us or by you; its retention
