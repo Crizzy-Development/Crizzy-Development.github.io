@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inkfall Privacy Policy</title>
-<meta name="description" content="The privacy policy for Inkfall, a narrative role-playing game for Android and iOS. Your stories stay on your device; each turn is sent to Google's Gemini API to write the next passage, and a report of a passage reaches us only if you send it.">
+<meta name="description" content="The privacy policy for Inkfall, a narrative role-playing game for Android and iOS. Your stories stay on your device; each turn is sent to a third-party AI service to write the next passage, and a report of a passage reaches us only if you send it.">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -24,10 +24,10 @@
   advertising, no analytics and no tracking. We collect no personal information, and nothing about
   you is sold or shared.</p>
   <p>One thing leaves your device as you play: to write each passage, Inkfall sends what you wrote,
-  together with the story so far and the state the app keeps for it, to Google's Gemini API, an AI
-  service that returns the next passage. It goes from your device to Google directly, as our service
-  provider. It does not pass through any system of ours, and we never see it. The section on the
-  narrator below says exactly what is sent and what Google does with it.</p>
+  together with the story so far and the state the app keeps for it, to a third-party AI service that returns the next passage. The provider of that service acts as
+  our service provider, and may change from time to time. Today the request goes from your device to
+  the provider directly; it does not pass through any system of ours, and we never see it. The section
+  on the narrator below says exactly what is sent and what the provider may do with it.</p>
   <p>One more thing can leave, and only if you send it: a report of a passage the narrator should not
   have written. Inkfall writes the report as an email in your own mail app, and nothing reaches us
   until you send that email. The section on reporting a passage says what a report contains.</p>
@@ -36,7 +36,7 @@
 <h2>Information we collect</h2>
 <p>None, unless you write to us. Inkfall has no user accounts, no sign-in and no registration. We do
 not collect, store, sell or share any personal information, and the app gives us no way to identify
-you. The narrator's requests go from your device to Google and back without touching anything of
+you. The narrator's requests go from your device to the AI provider and back without touching anything of
 ours, so we hold no copy of your stories and could not read one.</p>
 <p>If you send us a report of a passage, or any other email, we receive what you sent, including the
 email address it was sent from. The section on reporting a passage says exactly what a report
@@ -68,10 +68,10 @@ story text. Uninstalling Inkfall removes all of it, subject to the backup sectio
 ask it to. It goes only where you paste it.</p>
 
 <h2>The narrator</h2>
-<p>A narrator writes the passage that follows what you do. It is an AI model, Google's Gemini, which
-the app reaches through Google's Gemini API. The rules of the world are not the model's to change:
+<p>A narrator writes the passage that follows what you do. It is a generative AI model, which the app reaches
+through a third-party AI provider's service. The rules of the world are not the model's to change:
 the app decides what your actions cost and what becomes true, and the model writes the prose.</p>
-<p>Each turn, the app sends Google:</p>
+<p>Each turn, the app sends the AI provider:</p>
 <ul>
   <li>what you wrote this turn;</li>
   <li>the passages and actions so far, or as many recent ones as fit;</li>
@@ -79,11 +79,10 @@ the app decides what your actions cost and what becomes true, and the model writ
   in play, what has come to light, and the world's own rules for how it is written.</li>
 </ul>
 <p>It never sends anything about you. No name, no account, no identifier of yours, and nothing from
-elsewhere on your device. Google receives the request from your device, so it sees your device's
+elsewhere on your device. The provider receives the request from your device, so it sees your device's
 internet address, as any website you visit does.</p>
-<p>What is sent is governed by Google's terms for the Gemini API's paid services. Under those terms,
-as they stand at the date above, Google does not use it to train or improve its models, and may hold
-it for a limited time to detect abuse. The passage that comes back is stored on your device like
+<p>We choose providers whose terms for this service do not let them use what is sent to train or
+improve their models. A provider may hold it for a limited time to detect abuse, as its terms allow. The passage that comes back is stored on your device like
 everything else, and no copy of the exchange is kept by us.</p>
 <p>The iOS test build does not yet have this narrator: its passages come from text built into the
 app, and it sends nothing. It gains the live narrator in a later version.</p>
@@ -120,7 +119,7 @@ it into an email from anywhere. Copying sends nothing.</p>
 
 <h2>When Inkfall uses the network</h2>
 <p>When the narrator writes, and at no other time. Each turn is one request from your device to
-Google's servers. Nothing else in the app uses the network: no analytics, no crash reports, no
+the AI provider's servers. Nothing else in the app uses the network: no analytics, no crash reports, no
 checks for updates. A report does not use Inkfall's connection: the app hands the email to your mail
 app, which sends it if you do. Without a connection a new passage cannot be written, and everything
 already in your story can still be read.</p>
@@ -155,8 +154,8 @@ Sending a report is always your choice, and a report you sent can be deleted on 
 the app holds is on your device and under your control: delete a story from the Home screen (hold to delete, and it is not reversible), or
 uninstall the app to remove all of it. To remove a copy held by your platform's backup, use your
 Google or iCloud account's backup settings.</p>
-<p>What has been sent to the narrator cannot be recalled from Google by us or by you; its retention
-is governed by Google's terms above. Not taking a turn is the only way to send nothing, and
+<p>What has been sent to the narrator cannot be recalled from the AI provider by us or by you; its retention
+is governed by the provider's terms, as above. Not taking a turn is the only way to send nothing, and
 everything already in a story can be read without one.</p>
 
 <h2>Changes to this policy</h2>
